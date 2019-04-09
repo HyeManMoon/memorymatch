@@ -1,0 +1,331 @@
+::selection {
+    user-select: none;
+}
+
+#body {
+    height: 100vh;
+    width: 100vw;
+    background: url(./images/background-image.png) no-repeat;
+    background-size: cover;
+}
+.aboutMe {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.aboutBG {
+    background: grey;
+    opacity: 0.5;
+    height: 100%;
+    width:100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.aboutMain {
+    position: fixed;
+    height: 58%;
+    width: 45%;
+    background: #2d6075;
+    top: 27%;
+    left: 32%;
+    z-index:1;
+    display: flex;
+    justify-content: center;
+}
+.aboutMain > h1 {
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}
+.aboutMain > p {
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}
+.aboutImg {
+    position: absolute;
+    margin-top: 41%;
+    margin-left: -2%;
+    width: 135px;
+    height: 160px;
+    cursor: pointer;
+}
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.modalBG {
+    background: grey;
+    opacity: 0.5;
+    height: 100%;
+    width:100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.modalMain {
+    background: url("./images/modalBG.jpg") no-repeat;
+    background-size: contain;
+    position: fixed;
+    height: 58%;
+    width: 45%;
+    /*background: #2d6075;*/
+    top: 27%;
+    left: 32%;
+    z-index:1;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+
+}
+.modalMain > h1 {
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}
+.modalLose {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.modalBGLose{
+    background: grey;
+    opacity: 0.5;
+    height: 100%;
+    width:100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.modalMainLose {
+    position: relative;
+    height: 58%;
+    width: 45%;
+    background: url("./images/lose.jpg") no-repeat;
+    background-size: contain;
+
+    top: 27%;
+    left: 32%;
+    z-index:1;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+
+}
+.modalMainLose > h1 {
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}
+.closer {
+    position: absolute;
+    margin-top: 41%;
+    margin-left: -2%;
+    width: 135px;
+    height: 160px;
+    cursor: pointer;
+}
+.closer2 {
+    position: absolute;
+    margin-top: 41%;
+    margin-left: -2%;
+    width: 169px;
+    height: 193px;
+    cursor: pointer;
+}
+.modalWin {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.modalBGWin{
+    background: grey;
+    opacity: 0.5;
+    height: 100%;
+    width:100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.modalMainWin {
+    background: url(./images/victory2.jpg) no-repeat;
+    box-shadow: 0px 0px 95px 64px #404040;
+    border-radius: 25px;
+    -webkit-background-size: contain;
+    background-size: cover;
+    position: relative;
+    height: 53%;
+    width: 51%;
+    /* background: #2d6075; */
+    top: 27%;
+    left: 30%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.modalMainWin > h1 {
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}
+.closer3 {
+    position: absolute;
+    margin-top: 41%;
+    margin-left: -2%;
+    width: 135px;
+    height: 160px;
+    cursor: pointer;
+}
+
+#header {
+    display: flex;
+    height: 20%;
+    width: 100%;
+    position: relative;
+    /*background: url(./images/logo3.png) no-repeat;*/
+    top: 0;
+    justify-content: center;
+    color: white;
+
+}
+.about {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: inherit;
+    text-align: left;
+    margin-right: 26%;
+}
+.logo {
+    margin-right: 18%;
+}
+.stats {
+    display: inline-flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    float: left;
+    color: white;
+    height: 60%;
+    width: 12%;
+    font-size: 2em;
+    margin-left: 6%;
+}
+.gif{
+    display: none;
+}
+.gifStore {
+    float:right;
+    display: inline-flex;
+    flex-flow: column-reverse wrap;
+    margin-bottom: 5%;
+    justify-content: end;
+}
+
+.label {
+    color: black;
+}
+
+.card {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    width: 12%;
+    height: 93%;
+    margin: 9px;
+
+}
+.back {
+    position: absolute;
+    top: 0;
+    height: 102%;
+    width: 100%;
+    box-shadow: 0px 0px 50px 8px #404040;
+    /*display: none;*/
+
+
+}
+.hidden {
+    display: none;
+}
+/*.visible {*/
+/*display: initial;*/
+/*}*/
+.front  {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100% ;
+}
+
+.front > img, .back > img {
+    height: 100%;
+
+}
+
+
+.main-container {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%
+
+}
+#game-area {
+
+    /*width: 65%;*/
+    /*height: 80vh;*/
+    /*float: left;*/
+    /*text-align: center;*/
+    /*flex-flow: wrap row;*/
+    /*border: 1px solid black;*/
+
+    /*justify-content: flex-end;*/
+
+
+
+
+    display: flex;
+    float: left;
+    flex-flow: wrap row;
+    justify-content: center;
+    height: 70%;
+    width: 73%;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+.row1{
+    width: 100%;
+    height: 44%;
+    position: relative;
+    perspective: 800px;
+}
+.row2 {
+    width: 100%;
+    height: 44%;
+}
+.row3 {
+    width: 100%;
+    height: 44%;
+}
+
+
+.label, .attempts, .accuracy {
+    color: white;
+}

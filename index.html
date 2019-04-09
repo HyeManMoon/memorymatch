@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Game Title</title>
+    <!--about me page-->
+    settings link
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <script>
+        $(document).ready(function () {
+            $('.theme').get(0).play();
+        })
+    </script>
+
+
+</head>
+
+
+<body id="body">
+    <audio class="theme" src="./audio/Theme.mp3"></audio>
+    <audio class="start" src="./audio/Start.mp3"></audio>
+    <audio src="./audio/Game_Over.mp3" class="gameOver"></audio>
+    <audio src="./audio/Win.mp3" class="win"></audio>
+    <div class="aboutMe">
+        <div class="aboutBG"></div>
+        <div class="aboutMain">
+            <h1 style = "font-weight: bold;">About Me <br> <br><br><br> Hi! My name is Henry Moon and this is my take on the memory matching game.</h1>
+
+            <img class = "aboutImg" src="./images/Erika-animation.gif" alt="">
+
+        </div>
+    </div>
+
+
+    <div class="modal">
+        <div class="modalBG"></div>
+        <div class="modalMain">
+            <h1>Welcome to Fire Emblem memory game! <br> Find all the heros to win the game! <br> However, if you find Zephiel first, you will lose the game!
+                <br> To start the game click on Athos, the Living Legend.</h1>
+
+            <img src="./images/athos-animation.gif" alt="athos animation" class="closer" >
+        </div>
+    </div>
+
+    <div class="modalLose">
+        <div class="modalBGLose"></div>
+        <div class="modalMainLose">
+            <h1>YOU LOSE</h1>
+
+            <img src="./images/Zephiel_king.gif" alt="zephiel animation" class="closer2">
+        </div>
+    </div>
+
+    <div class="modalWin">
+        <div class="modalBGWin"> </div>
+        <div class="modalMainWin">
+            <h1></h1>
+
+            <img src="./images/Eliwood-animation.gif" alt="eliwood animation" class="closer3">
+        </div>
+    </div>
+
+    <div id="header">
+        <div class="gameTitle"></div>
+        <div></div>
+        <div class="about">about</div>
+        <div class="logo"><img src="./images/logo3.png" alt="logo" height="250px"></div>
+    </div>
+    <div class="main-container">
+
+    <div class="stats">
+        <div class="games-played">
+            <div class="label">Games Played:</div>
+            <div class="value"></div>
+        </div>
+
+        <div class="attempts">
+            <div class="label">Attempts:</div>
+            <div class="value"></div>
+        </div>
+
+        <div class="accuracy">
+            <div class="label">Accuracy:</div>
+            <div class="value"></div>
+        </div>
+
+        <button class="reset">Reset Game</button>
+    </div>
+    <div id="game-area" >
+        <div class="row1"></div>
+        <div class="row2"></div>q
+        <div class="row3"></div>
+
+    </div>
+
+    <div class="gifStore">
+
+    </div>
+
+
+
+</div>
+
+
+
+
+</body>
+
+
+
+
+</html>
